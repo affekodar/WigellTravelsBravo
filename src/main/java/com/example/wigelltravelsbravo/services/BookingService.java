@@ -1,4 +1,4 @@
 package com.example.wigelltravelsbravo.services;
 
-public class BookingService {
+public class BookingService implements BookingServiceInterface{
 }
