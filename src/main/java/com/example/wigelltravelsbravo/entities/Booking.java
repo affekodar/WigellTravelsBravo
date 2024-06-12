@@ -21,8 +21,9 @@ public class Booking {
 
     @Column(name = "total_price")
     private double totalPrice;
+
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     public Date getDepartureDate() {
