@@ -7,4 +7,5 @@ public interface DestinationServiceInterface {
     void deleteDestinationById(int id);
 
     Destination updateDestination(int id, Destination destination);
+    Destination findDestinationById(int id);
 }

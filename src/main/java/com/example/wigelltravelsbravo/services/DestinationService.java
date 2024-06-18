@@ -35,4 +35,11 @@ public class DestinationService implements DestinationServiceInterface{
         }
         return destinationRepository.save(updatedDestination);
     }
+
+    @Override
+    public Destination findDestinationById(int id) {
+        return destinationRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Destination", "ID", id));
+    }
+
 }

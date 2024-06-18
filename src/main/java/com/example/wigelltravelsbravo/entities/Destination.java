@@ -10,10 +10,10 @@ public class Destination {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "country")
+    @Column(name = "country", length = 15)
     private String country;
 
-    @Column(name = "city")
+    @Column(name = "city", length = 20)
     private String city;
 
 

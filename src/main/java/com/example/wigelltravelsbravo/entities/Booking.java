@@ -8,7 +8,7 @@ import java.util.Date;
 @Table(name = "bookings")
 public class Booking {
 
-    @Column(name = "departure_date")
+    @Column(name = "departure_date", length = 40)
     @Temporal(TemporalType.DATE)
     private Date departureDate;
 
@@ -16,11 +16,15 @@ public class Booking {
     @JoinColumn(name = "destination_id", nullable = false)
     private Destination destination;
 
-    @Column(name = "hotel")
+    @Column(name = "hotel", length = 20)
     private String hotel;
 
-    @Column(name = "total_price")
-    private double totalPrice;
+    @Column(name = "total_price_sek")
+    private double totalPriceSEK;
+
+
+    @Column(name = "total_price_eur")
+    private double totalPriceEUR;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -50,12 +54,20 @@ public class Booking {
         this.hotel = hotel;
     }
 
-    public double getTotalPrice() {
-        return totalPrice;
+    public double getTotalPriceSEK() {
+        return totalPriceSEK;
     }
 
-    public void setTotalPrice(double totalPrice) {
-        this.totalPrice = totalPrice;
+    public void setTotalPriceSEK(double totalPriceSEK) {
+        this.totalPriceSEK = totalPriceSEK;
+    }
+
+    public double getTotalPriceEUR() {
+        return totalPriceEUR;
+    }
+
+    public void setTotalPriceEUR(double totalPriceEUR) {
+        this.totalPriceEUR = totalPriceEUR;
     }
 
     public void setId(Integer id) {

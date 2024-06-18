@@ -31,7 +31,8 @@ public class SecurityConfig {
                         .requestMatchers("/api/v2/updatetrip/{id}").hasRole("USER")
                         .anyRequest().authenticated())
                 .httpBasic(Customizer.withDefaults())
-                .formLogin(Customizer.withDefaults());
+                .formLogin(Customizer.withDefaults())
+                .csrf(csrf -> csrf.disable());
         return http.build();
     }
 

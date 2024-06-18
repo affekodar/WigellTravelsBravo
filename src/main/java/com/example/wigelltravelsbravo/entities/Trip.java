@@ -13,7 +13,7 @@ public class Trip {
     @Column(name = "price_weekly")
     private double pricePerWeek;
 
-    @Column(name = "hotel")
+    @Column(name = "hotel", length = 20)
     private String hotel;
 
 
@@ -29,4 +29,29 @@ public class Trip {
     public Integer getId() {
         return id;
     }
+
+    public double getPricePerWeek() {
+        return pricePerWeek;
+    }
+
+    public void setPricePerWeek(double pricePerWeek) {
+        this.pricePerWeek = pricePerWeek;
+    }
+
+    public String getHotel() {
+        return hotel;
+    }
+
+    public void setHotel(String hotel) {
+        this.hotel = hotel;
+    }
+
+    public Destination getDestination() {
+        return destination;
+    }
+
+    public void setDestination(Destination destination) {
+        this.destination = destination;
+    }
+
 }
