@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "bookings")
+@Table(name = "bookings_travels")
 public class Booking {
 
     @Column(name = "departure_date", length = 40)
