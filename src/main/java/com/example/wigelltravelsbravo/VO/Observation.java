@@ -1,4 +1,4 @@
-package com.example.wigelltravelsbravo;
+package com.example.wigelltravelsbravo.VO;
 
 public class Observation {
     private String date;

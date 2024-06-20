@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class DestinationService implements DestinationServiceInterface{
+public class DestinationService implements DestinationServiceInterface {
 
     @Autowired
     private DestinationRepository destinationRepository;

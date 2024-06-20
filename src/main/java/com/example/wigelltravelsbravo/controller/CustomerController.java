@@ -31,7 +31,7 @@ public class CustomerController {
     @PostMapping("/booktrip")
     public ResponseEntity<Booking> addBooking(@RequestBody Booking booking) {
         logger.info("customer added booking to " + booking.getDestination().getCity() + ", " + booking.getDestination().getCountry());
-       return ResponseEntity.ok(bookingService.addNewBooking(booking));
+        return ResponseEntity.ok(bookingService.addNewBooking(booking));
     }
 
 

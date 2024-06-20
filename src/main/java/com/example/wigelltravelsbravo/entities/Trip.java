@@ -21,13 +21,12 @@ public class Trip {
     @JoinColumn(name = "destination_id", nullable = false)
     private Destination destination;
 
+    public Integer getId() {
+        return id;
+    }
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public Integer getId() {
-        return id;
     }
 
     public double getPricePerWeek() {

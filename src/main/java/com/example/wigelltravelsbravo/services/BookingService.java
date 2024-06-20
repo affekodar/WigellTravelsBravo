@@ -1,6 +1,6 @@
 package com.example.wigelltravelsbravo.services;
 
-import com.example.wigelltravelsbravo.Observation;
+import com.example.wigelltravelsbravo.VO.Observation;
 import com.example.wigelltravelsbravo.entities.Booking;
 import com.example.wigelltravelsbravo.exceptions.ResourceNotFoundException;
 import com.example.wigelltravelsbravo.repositories.BookingRepository;
@@ -16,7 +16,7 @@ import java.util.List;
 import static java.time.temporal.ChronoUnit.DAYS;
 
 @Service
-public class BookingService implements BookingServiceInterface{
+public class BookingService implements BookingServiceInterface {
 
     @Autowired
     private BookingRepository bookingRepository;

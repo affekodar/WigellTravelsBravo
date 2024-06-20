@@ -1,4 +1,5 @@
 package com.example.wigelltravelsbravo.controller;
+
 import com.example.wigelltravelsbravo.entities.Customer;
 import com.example.wigelltravelsbravo.entities.Destination;
 import com.example.wigelltravelsbravo.services.CustomerService;
@@ -7,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 

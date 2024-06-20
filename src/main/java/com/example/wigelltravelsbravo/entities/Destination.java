@@ -16,13 +16,12 @@ public class Destination {
     @Column(name = "city", length = 20)
     private String city;
 
+    public Integer getId() {
+        return id;
+    }
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public Integer getId() {
-        return id;
     }
 
     public String getCountry() {

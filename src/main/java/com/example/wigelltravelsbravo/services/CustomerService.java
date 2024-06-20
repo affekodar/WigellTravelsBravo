@@ -12,6 +12,7 @@ public class CustomerService implements CustomerServiceInterface {
 
     @Autowired
     private CustomerRepository customerRepository;
+
     @Override
     public List<Customer> fetchAllCustomers() {
         return customerRepository.findAll();
