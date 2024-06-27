@@ -23,7 +23,7 @@ public class Booking {
     private double totalPriceSEK;
 
 
-    @Column(name = "total_price_eur")
+    @Column(name = "total_price_eur", nullable = true)
     private double totalPriceEUR;
 
     @Id

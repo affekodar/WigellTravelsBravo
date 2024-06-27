@@ -40,6 +40,9 @@ public class BookingService implements BookingServiceInterface {
         if (booking.getHotel() != null) {
             updatedBooking.setHotel(booking.getHotel());
         }
+            updatedBooking.setTotalPriceSEK(booking.getTotalPriceSEK());
+            updatedBooking.setTotalPriceEUR(priceInEuro(updatedBooking.getTotalPriceSEK()));
+
         return bookingRepository.save(updatedBooking);
     }
 
